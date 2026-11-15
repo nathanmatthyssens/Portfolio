@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neem contact op met Nathan Matthyssens voor vragen over projecten, netwerkbeheer of mogelijke samenwerkingen.">
+    <title>Contact - Nathan Matthyssens</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-sans">
+    <div class="max-w-6xl mx-auto px-4">
+        <header class="flex flex-col md:items-center md:justify-between gap-4 md:flex-row">
+            <div class="flex items-center gap-3">
+                <img src="images/logo.png" alt="Logo portfolio" width="64" height="64" class="size-16 object-contain">
+                <h1 class="text-xl font-bold">Nathan Matthyssens</h1>
+            </div>
+
+            <input type="checkbox" id="menu-knop" class="peer sr-only">
+
+            <label for="menu-knop" class="rounded-lg border border-green-900 text-green-900 px-3 py-2 md:hidden">
+                Menu
+            </label>
+            <nav class="hidden w-full peer-checked:block md:block md:w-auto">
+                <ul class="flex flex-col md:flex-row md:gap-2">
+                    <li>
+                        <a href="index.html"
+                            class="block px-3 py-2 rounded-lg text-green-900 hover:bg-amber-100">Home</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html"
+                            class="block px-3 py-2 rounded-lg text-green-900 hover:bg-amber-100">Projecten</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" aria-current="page"
+                            class="block px-3 py-2 rounded-lg text-amber-100 bg-green-900 font-semibold">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <main class="md:col-span-2">
+                <h2 class="text-2xl font-bold text-green-900">Contact</h2>
+
+                <p class="mt-4">
+                    Heb je een vraag of wil je meer informatie?
+                    Neem gerust contact op.
+                </p>
+
+                <form action="#" method="get">
+                    <p>
+                        <label for="naam" class="block">Naam</label>
+                        <input type="text" id="naam" name="naam" required autocomplete="name" class="mt-1 w-full rounded-lg border border-gray-400 bg-white px-3 py-2">
+                    </p>
+
+                    <p>
+                        <label for="email" class="block">E-mailaddres</label>
+                        <input type="email" id="email" name="email" class="mt-1 w-full border border-gray-400 bg-white px-3 py-2 peer" required autocomplete="email" aria-describedby="email-hulp">
+
+                        <span id="email-hulp" class="text-sm text-gray-600">Geef een geldig e-mailadres op.</span>
+
+                        <span class="hidden text-sm text-red-700 peer-user-invalid:block">Vul een geldig e-mailadres in.</span>
+                    </p>
+
+                    <p>
+                        <label for="bericht" class="block">Bericht</label>
+                        <textarea name="bericht" id="bericht" class="mt-1 w-full border border-gray-400 rounded-lg bg-white px-3 py-2 peer" required></textarea>
+
+                        <span class="hidden text-sm text-red-700 peer-user-invalid:block">Vul je bericht in.</span>
+                    </p>
+                </form>
+
+                <button type="submit" class="rounded-lg bg-green-900 px-4 py-2 text-white hover:bg-green-800">Verzenden</button>
+
+                <form action="#" method="get" class="grid gap-4"></form>
+            </main>
+
+            <aside>
+                <h2 class="font-bold text-xl text-green-900">Contact info</h2>
+
+                <p class="mt-4">E-mailadres: jouw e-mailadres</p>
+                <p class="mt-4">Andere contactinformatie</p>
+            </aside>
+        </div>
+
+        <footer class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <p>Nathan Matthyssens</p>
+
+            <p>&copy; 2026</p>
+        </footer>
+    </div>
+</body>
+
+</html>

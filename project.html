@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ontdek de technische projecten van Nathan Matthyssens rond netwerkbeheer, infrastructuur en IT.">
+    <title>Project - Nathan Matthyssens</title>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-sans">
+    <div class="max-w-6xl mx-auto px-4">
+        <header class="flex flex-col md:items-center md:justify-between gap-4 md:flex-row">
+            <div class="flex items-center gap-3">
+                <img src="images/logo.png" alt="Logo portfolio" width="64" height="64" class="size-16 object-contain">
+                <h1 class="text-xl font-bold">Nathan Matthyssens</h1>
+            </div>
+
+            <input type="checkbox" id="menu-knop" class="peer sr-only">
+
+            <label for="menu-knop" class="rounded-lg border border-green-900 text-green-900 px-3 py-2 md:hidden">
+                Menu
+            </label>
+            <nav class="hidden w-full peer-checked:block md:block md:w-auto">
+                <ul class="flex flex-col md:flex-row md:gap-2">
+                    <li>
+                        <a href="index.html"
+                            class="block px-3 py-2 rounded-lg text-green-900 hover:bg-amber-100">Home</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html"
+                            class="block px-3 py-2 rounded-lg text-green-900 hover:bg-amber-100">Projecten</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"
+                            class="block px-3 py-2 rounded-lg text-green-900 hover:bg-amber-100">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <main class="md:col-span-2">
+                <a href="portfolio.html" class="text-green-900 hover:bg-amber-100 underline">Terug naar portfolio</a>
+
+                <h2 class="font-bold text-2xl text-green-900">WebWiz - Netwerkinfrastructuur</h2>
+
+                <section>
+                    <h3 class="font-bold text-xl text-amber-800 mt-4">Over het project</h3>
+
+                    <p>
+                        WebWiz was een fictief bedrijf waarvoor een fysieke
+                        netwerkinfrastructuur ontworpen moest worden.
+                        Het project sloot aan bij de fysieke laag van het OSI-model.
+                    </p>
+
+                    <figure><img src="images/webwiz.png" alt="Netwerkinfrastructuur van het fictieve bedrijf WebWiz"
+                            width="1920" height="768" class="w-full rounded-lg">
+                        <figcaption class="text-sm text-gray-500">Overzicht van de netwerkinfrastructuur voor het
+                            project WebWiz</figcaption>
+                    </figure>
+                </section>
+            </main>
+
+            <aside>
+                <h2 class="font-bold text-xl text-green-900">Project info</h2>
+
+                <p><strong>Type:</strong> Schoolproject</p>
+                <p><strong>Onderwerp:</strong> Netwerkinfrastructuur</p>
+                <p><strong>Focus:</strong> Fysieke laag van het OSI-model</p>
+                <p><strong>Tool:</strong> Cisco Packet Tracer</p>
+            </aside>
+        </div>
+
+        <footer class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <p>Nathan Matthyssens</p>
+
+            <a href="contact.html">Contact</a>
+
+            <p>&copy; 2026</p>
+        </footer>
+    </div>
+</body>
+
+</html>
